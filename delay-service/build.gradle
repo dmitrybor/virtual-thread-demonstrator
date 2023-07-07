@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation "org.springdoc:springdoc-openapi-starter-webflux-ui:2.1.0"
+    testImplementation 'io.projectreactor:reactor-test:3.5.7'
+}
+
+test {
+    useJUnitPlatform()
+}
