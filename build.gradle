@@ -8,6 +8,9 @@ repositories {
     mavenCentral()
 }
 
+jar.enabled = false
+
+
 subprojects {
 
     group = 'net.pydog'
