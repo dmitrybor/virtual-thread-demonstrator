@@ -1,26 +1,14 @@
 plugins {
-    id 'java'
     id 'org.springframework.boot' version '3.1.1' apply false
     id 'io.spring.dependency-management' version '1.1.0' apply false
 }
-
-repositories {
-    mavenCentral()
-}
-
-jar.enabled = false
-
 
 subprojects {
 
     group = 'net.pydog'
     version = '0.0.1-SNAPSHOT'
 
-    apply {
-        plugin 'java'
-    }
-
-    dependencies {
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    repositories {
+        mavenCentral()
     }
 }
