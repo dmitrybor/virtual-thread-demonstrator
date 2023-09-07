@@ -12,7 +12,7 @@ Type=simple
 
 Environment="JAVA_HOME=/usr/lib/jvm/openjdk19"
 WorkingDirectory=/opt/vtd/delay-service
-ExecStart=${JAVA_HOME}/bin/java -Xms750m -Xmx750m -jar delay-service.jar
+ExecStart=/usr/lib/jvm/openjdk19/bin/java -Xms750m -Xmx750m -jar delay-service.jar
 ExecStop=/bin/kill -15 $MAINPID
 
 [Install]
