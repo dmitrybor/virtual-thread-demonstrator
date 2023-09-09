@@ -13,4 +13,5 @@ cd virtual-thread-demonstrator
 git checkout feature/VTD-8-service-deployment
 export VTD_PROJECT_DIR=$(pwd)
 
+# Install and launch service (comment/uncomment as required)
 source ./ops-tools/install-delay-service.sh
