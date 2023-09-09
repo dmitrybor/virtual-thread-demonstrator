@@ -1,10 +1,11 @@
 #!/bin/bash
 
-cd $VTD_PROJECT_DIR/ops-tools
-source ./install-java.sh
-
-# build delay service
 cd $VTD_PROJECT_DIR
+
+# install jdk
+source ./ops-tools/install-java.sh
+
+# build service
 ./gradlew clean :delay-service:build -x :delay-service:test --no-daemon
 ./gradlew --stop
 
