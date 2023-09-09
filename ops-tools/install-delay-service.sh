@@ -9,6 +9,8 @@ cd $VTD_PROJECT_DIR
 ./gradlew --stop
 
 # install service
+useradd -M vtd
+usermod -L vtd
 chmod +x delay-service/build/libs/delay-service-0.0.1-SNAPSHOT.jar
 mkdir -p /opt/vtd/delay-service
 cp -R delay-service/config /opt/vtd/delay-service/config
