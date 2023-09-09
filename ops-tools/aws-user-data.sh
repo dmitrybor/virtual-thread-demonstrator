@@ -10,7 +10,6 @@ cd vtd-test
 # checkout vtd repo
 git clone https://github.com/dmitrybor/virtual-thread-demonstrator.git
 cd virtual-thread-demonstrator
-git checkout feature/VTD-8-service-deployment
 export VTD_PROJECT_DIR=$(pwd)
 
 # Install and launch service (comment/uncomment as required)
