@@ -1,4 +1,4 @@
-# Deploying serviced to AWS EC2
+# Deploying a service to AWS EC2
 
 All services can be deployed as systemd services on a Linux machine.
 
