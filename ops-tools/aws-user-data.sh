@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install git
-yum install git -y
+yum install git htop -y
 #apt install git
 
 mkdir vtd-test
@@ -14,3 +14,4 @@ export VTD_PROJECT_DIR=$(pwd)
 
 # Install and launch service (comment/uncomment as required)
 source ./ops-tools/install-delay-service.sh
+source ./ops-tools/prepare-for-gatling.sh

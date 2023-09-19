@@ -6,3 +6,5 @@ tar -xf openjdk19.tar.gz -C openjdk19 --strip-components 1
 mkdir -p /usr/lib/jvm
 mv openjdk19 /usr/lib/jvm/openjdk19
 export JAVA_HOME=/usr/lib/jvm/openjdk19
+echo "export JAVA_HOME=/usr/lib/jvm/openjdk19" >> /etc/profile
+echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> /etc/profile
