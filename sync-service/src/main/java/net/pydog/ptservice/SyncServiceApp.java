@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SyncPlatformThreadApp {
+public class SyncServiceApp {
 
   public static void main(String[] args) {
-    SpringApplication.run(SyncPlatformThreadApp.class, args);
+    SpringApplication.run(SyncServiceApp.class, args);
   }
 }
