@@ -14,4 +14,5 @@ export VTD_PROJECT_DIR=$(pwd)
 
 # Install and launch service (comment/uncomment as required)
 source ./ops-tools/install-delay-service.sh
-# source ./ops-tools/prepare-for-gatling.sh
+#source ./ops-tools/install-sync-service.sh
+#source ./ops-tools/prepare-for-gatling.sh
