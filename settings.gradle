@@ -1,6 +1,5 @@
 rootProject.name = 'thread-benchmark'
 include 'async-service'
-include 'sync-virtual-thread-service'
 include 'delay-service'
-include 'sync-platform-thread-service'
+include 'sync-service'
 include 'performance-tests'
