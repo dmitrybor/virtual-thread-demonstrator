@@ -1,6 +1,6 @@
-package net.pydog.ptservice.web;
+package net.pydog.syncservice.web;
 
-import net.pydog.ptservice.service.DelayService;
+import net.pydog.syncservice.service.DelayService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,10 +1,10 @@
-package net.pydog.ptservice.service;
+package net.pydog.syncservice.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import net.pydog.ptservice.configuration.DelayServiceProperties;
+import net.pydog.syncservice.configuration.DelayServiceProperties;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

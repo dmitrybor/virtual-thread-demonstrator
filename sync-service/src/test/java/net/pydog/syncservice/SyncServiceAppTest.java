@@ -1,4 +1,4 @@
-package net.pydog.ptservice;
+package net.pydog.syncservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

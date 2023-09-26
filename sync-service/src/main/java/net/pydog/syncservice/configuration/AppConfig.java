@@ -1,4 +1,4 @@
-package net.pydog.ptservice.configuration;
+package net.pydog.syncservice.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

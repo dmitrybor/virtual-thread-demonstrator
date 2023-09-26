@@ -1,6 +1,6 @@
-package net.pydog.ptservice.service;
+package net.pydog.syncservice.service;
 
-import net.pydog.ptservice.configuration.DelayServiceProperties;
+import net.pydog.syncservice.configuration.DelayServiceProperties;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;

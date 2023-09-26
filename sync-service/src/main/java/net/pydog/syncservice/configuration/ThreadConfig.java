@@ -1,4 +1,4 @@
-package net.pydog.ptservice.configuration;
+package net.pydog.syncservice.configuration;
 
 import java.util.concurrent.Executors;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

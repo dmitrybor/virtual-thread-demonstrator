@@ -1,4 +1,4 @@
-package net.pydog.ptservice.configuration;
+package net.pydog.syncservice.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
