@@ -12,7 +12,7 @@ Type=simple
 
 Environment="JAVA_HOME=${JAVA_HOME}"
 WorkingDirectory=${SERVICE_WORKING_DIRECTORY}
-ExecStart=${JAVA_HOME}/bin/java -Xms750m -Xmx750m -jar ${SERVICE_NAME}-service.jar
+ExecStart=${JAVA_HOME}/bin/java --enable-preview -Xms750m -Xmx750m -jar ${SERVICE_NAME}-service.jar
 ExecStop=/bin/kill -15 $MAINPID
 
 [Install]
