@@ -4,19 +4,10 @@ cd $VTD_PROJECT_DIR
 
 # install jdk
 source ./ops-tools/install-java.sh
-#if [ $1 = 'virtual' ]
-#then
-#  export THREAD_TYPE='virtual'
-#else
-#  export THREAD_TYPE='platform'
-#fi
 
 export SERVICE_NAME="$THREAD_TYPE"sync
-#export SERVICE_PORT="$2"
-#export DELAY_SERVICE_URL="$3"
-
-echo "Deploying $SERVICE_NAME service"
 export SERVICE_WORKING_DIRECTORY="/opt/vtd/$THREAD_TYPE-sync-service"
+
 mkdir -p $SERVICE_WORKING_DIRECTORY
 
 # build service
