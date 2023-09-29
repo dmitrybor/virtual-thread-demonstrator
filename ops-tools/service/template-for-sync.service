@@ -1,0 +1,19 @@
+[Unit]
+Description=Delay Service
+After=syslog.target network.target
+
+[Service]
+SuccessExitStatus=143
+
+User=vtd
+Group=vtd
+
+Type=simple
+
+Environment="JAVA_HOME=${JAVA_HOME}"
+WorkingDirectory=${SERVICE_WORKING_DIRECTORY}
+ExecStart=${JAVA_HOME}/bin/java --enable-preview -Xms750m -Xmx750m -jar ${SERVICE_NAME}-service.jar
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
