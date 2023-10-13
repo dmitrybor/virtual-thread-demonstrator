@@ -49,4 +49,25 @@ benchmark runs with the only difference being the type of threads used by the ap
 
 ## Running performance test
 
+- `ssh` into the Gatling Test Suite instance
+- clone this repository
+- run the benchmark as described in [performance-tests/README.md](performance-tests/README.md)
+- copy the report from the Gatling Test Suite instance using `scp` \
+  Example:
+  ```shell
+  scp -i "aws-key.pem" -r ec2-user@ec2-16-171-115-121.eu-north-1.compute.amazonaws.com:~/virtual-thread-demonstrator/performance-tests/build/reports/gatling gatling
+  ```
+
 ## Test Results
+
+The following are the example performance test results for virtual and platform thread modes when run with described
+configuration of the test environment. The load scenario used to produce the results was to gradually increase load
+on the application under test from 10 QPS to 2800 QPS over 120 seconds.
+
+### Platform Threads
+
+![Platform threads results](doc/platform-thread-results.png)
+
+### Virtual Threads
+
+![Virtual threads results](doc/virtual-thread-results.png)
