@@ -1,6 +1,6 @@
 # Virtual Thread Demonstrator
 
-This repository contains code and deployment scrips for performance test environment that compares the performance of a
+This repository contains code and deployment scripts for performance test environment that compares the performance of a
 web application using classic platform threads.
 
 ## Test Environment
@@ -14,7 +14,7 @@ The environment consists of the following components.
   application under test.
 
 To ensure that no other component of the environment except the application under test represents a bottleneck,more
-powerful hardware should be used for Delay Service and Gatling Test Suite. The Delay Service can be deployedeither
+powerful hardware should be used for Delay Service and Gatling Test Suite. The Delay Service can be deployed either
 behind a load balancer or on a machine with significantly better specifications that the one used for Sync Service.
 
 ![Test Environment Diagram](doc/test-environment.png)
@@ -60,7 +60,7 @@ benchmark runs with the only difference being the type of threads used by the ap
 ## Test Results
 
 The following are the example performance test results for virtual and platform thread modes when run with
-describedconfiguration of the test environment. The load scenario used to produce the results was to gradually increase
+described configuration of the test environment. The load scenario used to produce the results was to gradually increase
 load on the application under test from 10 QPS to 2800 QPS over 120 seconds.
 
 ### Platform Threads
